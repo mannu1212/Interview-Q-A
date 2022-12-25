@@ -1,0 +1,5 @@
+FROM alpine
+#RUN echo "hello world"
+ENTRYPOINT echo "hello-world"
+#docker build -f dockerfile-hello-world -t hello2:latest .
+# docker run -it --name 1st_hello_dockerfile hello2:latest
