@@ -1,0 +1,8 @@
+FROM mysql
+MAINTAINER mannu
+RUN chown -R mysql:root /var/lib/mysql/
+ENV MYSQL_DATABASE=DB
+ENV MYSQL_USER=user11
+ENV MYSQL_PASSWORD=password11
+ENV MYSQL_ROOT_PASSWORD=password
+EXPOSE 3306
