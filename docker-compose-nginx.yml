@@ -2,8 +2,7 @@ version: '3.7'
 services:
   #Nginx Service
    webserver:
-     image: nginx:alpine
-     container_name: webserver
-     restart: unless-stopped
+     image: nginx:latest
+     container_name: web-app
      ports:
        - "80:80"
