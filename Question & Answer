@@ -1,0 +1,22 @@
+Kindly find answer.
+
+1.Create three Docker containers, on your PC as below.
+
+2.One docker container that runs a simple "hello world" application.
+
+Command
+docker run -it --name 1st_app hello-world
+
+3.The second that runs Nginx or apache to expose the above docker application.
+
+Command
+docker run -it --name 2nd_app -p 8080:80 nginx:latest
+
+4.The third one, that runs a database (you can choose any database of your choice).
+
+Command
+docker run -d -p 3306:3306 --name 3rd_app -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=DB_Server -e MYSQL_USER=user -e MYSQL_PASSWORD=password mysql/mysql-server:latest
+
+5.Send us the bitbucket / github repository that contains a docker-compose file and three Dockerfiles (one per app) and the docker-compose must start this Hello World application.
+
+have added some files for this 
