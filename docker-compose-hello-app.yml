@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  #Hello-world
+     hello-world:
+          image:hello-world
+          container_name: hello-app
+          
