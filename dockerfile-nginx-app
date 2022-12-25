@@ -1,0 +1,7 @@
+FROM ubuntu
+RUN apt-get -y update && apt-get -y install nginx
+ADD nginx.conf /etc/nginx/
+EXPOSE 80/tcp
+CMD service nginx start
+#docker build -f dockerfile-nginx-app -t web-app:latest .
+#docker run -it --name 2nd_docker-app web-app:latest
